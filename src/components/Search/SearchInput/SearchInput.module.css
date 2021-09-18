@@ -1,0 +1,74 @@
+.searchInputBlock{
+  color: white;
+  flex: 1 0 45%;
+}
+
+.searchInput{
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    font-size: 22px;
+  }
+  
+  .searchInput:focus {
+    outline: 0;
+    color: white;
+  }
+  
+  .searchInput {
+    font-size: 40px;
+    padding: 5px 10px;
+    font-weight: 300;
+    border-radius: 2px;
+    margin: 0;
+    border-bottom: 1px solid deepskyblue;
+    width: 80%;
+    background: rgba(0, 0, 0, 0);
+    transition: padding-top 0.2s ease, margin-top 0.2s ease;
+    overflow-x: hidden; 
+  }
+   
+  .searchInput:focus,
+  .searchInput:valid {
+    color: white;
+  }
+
+  
+
+  .searchInput:invalid {
+    box-shadow: none;
+  }
+  
+
+  input[type="submit"] {
+    transition: opacity 0.2s ease, background 0.2s ease;
+    display: block;
+    opacity: 0;
+    margin: 10px 0 0 0;
+    padding: 10px;
+    cursor: pointer;
+  }
+    
+  @-webkit-keyframes appear {
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes appear {
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 400px){
+    .searchInputBlock{
+      width: 100%;
+      flex: none;
+    }
+    .searchInput {
+      font-size: 35px;
+    }
+  }

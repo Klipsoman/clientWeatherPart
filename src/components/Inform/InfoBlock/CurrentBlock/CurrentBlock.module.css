@@ -1,0 +1,45 @@
+.currentBlock{
+    width: 45%;
+    overflow: hidden;
+}
+.currentBlock_header{
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.weatherNowItem{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weatherNowItem img{
+  width: 40px;
+}
+.weatherNowItem p{
+    color: antiquewhite;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 6px;
+  }
+
+.weatherNowItem:nth-of-type(1) p::after{
+    content: "o";
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    right: 10;
+}
+
+@media (max-width: 400px){
+    .weatherNowItem p{
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .currentBlock_header{
+        font-size: 15px;
+    }
+}

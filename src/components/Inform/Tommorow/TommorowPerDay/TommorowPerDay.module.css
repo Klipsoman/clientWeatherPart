@@ -1,0 +1,51 @@
+
+.tommorowPerDayBlock{
+    width: 40%;
+}
+
+.perDayBlock h4{
+    font-weight: 300;
+}
+.dayTime{
+    display: flex;
+    flex-direction: column;
+}
+.dayTimeElem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dayTimeElem img{
+    width: 40px;
+}
+.dayTimeElem h4{
+    width: 35px;
+    font-weight: 400;
+    flex: 0 0 60%;
+}
+.dayTimeElem_time{
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    color: antiquewhite;
+}
+.dayTimeElem_imgBlock{
+    display: flex;
+    margin-left: 5px;
+}
+.dayTimeElem_time::after{
+    content: "o";
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    right: 10;
+}
+
+@media (max-width: 400px){
+    .dayTimeElem_time{
+        font-size: 13px;
+    }
+    .dayTimeElem h4{
+        font-size: 13px;
+    }
+}

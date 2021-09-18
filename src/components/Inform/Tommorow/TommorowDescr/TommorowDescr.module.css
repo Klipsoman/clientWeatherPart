@@ -1,0 +1,20 @@
+.tommorowDescr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.tommorowDescr span{
+    text-align: right;
+    font-weight: bold;
+}
+@media (max-width: 400px){
+    .tommorowDescr{
+        font-size: 12px;
+    }
+    .tommorowDescr span{
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+    }
+}

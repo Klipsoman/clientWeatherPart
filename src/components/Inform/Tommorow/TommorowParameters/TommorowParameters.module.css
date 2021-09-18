@@ -1,0 +1,32 @@
+
+.tommorowParameters{
+    width: 50%;
+    overflow: hidden;
+}
+.currentBlock_header{
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.weatherNowItem{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weatherNowItem img{
+  width: 40px;
+}
+.weatherNowItem p{
+    color: antiquewhite;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    margin-left: 15px;
+}
+@media (max-width: 400px){
+    .weatherNowItem p{
+        font-size: 13px;        
+    }
+}

@@ -1,0 +1,8 @@
+:root{
+  background: linear-gradient(
+      180deg
+      , #74a0b8, #737c80, #2c4b5b);
+}
+#root{
+  height: 100vh;
+}

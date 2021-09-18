@@ -1,0 +1,58 @@
+.perDayBlock{
+    width: 45%;
+}
+.perDayBlock_header{
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.perDayBlock h4{
+    font-weight: 300;
+}
+.dayTime{
+    display: flex;
+    flex-direction: column;
+}
+.dayTimeElem{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+.dayTimeElem img{
+    width: 40px;
+}
+.dayTimeElem h4{
+    width: 35px;
+}
+.dayTimeElem_time{
+    color: antiquewhite;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+}
+.dayTimeElem_imgBlock{
+    display: -webkit-flex;
+    display: flex;
+    margin-left: 5px;
+    justify-self: end;
+}
+.dayTimeElem_time::after{
+    content: "o";
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    right: 10;
+}
+
+@media (max-width: 400px){
+    .dayTimeElem_time{
+        font-size: 13px;
+    }
+    .dayTimeElem h4{
+        font-size: 13px;
+    }
+    .perDayBlock_header{
+        font-size: 15px;
+    }
+}
+

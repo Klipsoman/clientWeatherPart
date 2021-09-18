@@ -1,0 +1,21 @@
+.tommorowBlock{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.tommorowHeader{
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    flex: 0 0 100%;
+}
+@media (max-width: 400px){
+    .tommorowHeader{
+        font-size: 16px;
+    }
+}
+@media (max-width: 500px){
+    .tommorowHeader{
+        font-size: 17px;
+    }
+}
